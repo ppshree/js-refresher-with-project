@@ -10,6 +10,7 @@ It’s designed to strengthen your **JavaScript fundamentals** before diving int
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/ppshree/js-refresher-with-project.git
+```
 cd js-refresher-with-project
 2. Open in VS Code
 
@@ -25,7 +26,7 @@ Scope defines variable visibility.
 
 ✅ Example:
 
-<pre> ```js console.log("PANKAJ"); 
+```bash console.log("PANKAJ"); ```
 function testScope() {
   if (true) {
     var x = "I am var";   // function-scoped
@@ -36,7 +37,7 @@ function testScope() {
   // console.log(y); ❌ Error
   // console.log(z); ❌ Error
 }
-testScope(); ``` </pre>
+testScope(); 
 👉 Practice:
 
 Try re-declaring a let variable.
