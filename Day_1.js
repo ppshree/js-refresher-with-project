@@ -3,13 +3,9 @@
 // 📖 JavaScript Refresher – Study Material (1 Week)
 // Day=1. Variables (let, const, scope)
 // 📌 Concepts
-
 // var → Function scoped (old way, avoid using).
-
 // let → Block scoped, can be updated but not re-declared in the same scope.
-
 // const → Block scoped, cannot be re-assigned (but objects/arrays inside can be mutated).
-
 // Scope → Defines where variables are accessible.
 
 // var firstName='Pankaj';
@@ -70,7 +66,7 @@
     //console.log(x);
     //console.log(y);
     //console.log(z);
-    //reference Error with both let and const because block scope but var var is working because functional scope;
+    //reference Error with both let and const because block scope but var is working because functional scope;
 
 
 //}

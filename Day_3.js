@@ -1,14 +1,9 @@
 // 3. Arrays & Objects (map, filter, reduce, destructuring)
 // 📌 Concepts
-
 // map: Transform each element.
-
 // filter: Keep elements that match condition.
-
 // reduce: Accumulate values.
-
 // Destructuring: Extract values from objects/arrays easily.
-
 //const number=[5,6,3,2,8,9];
 //map
 //console.log(number.map((a)=>a*2))
@@ -40,7 +35,7 @@
 // console.log(newNum);
 
 //forEach
-//it's only iritates doues not return;
+//it's only iritates does not return;
 // number.forEach((a)=>{
 //    console.log(a)
     
@@ -85,9 +80,9 @@
 // const usersAge=users.map((user)=>user.age);
 // console.log(usersAge)
 
-// ...c here is called the rest operator (rest element).
 // const arr = [2,4,6,8,7,8,9];
 // const [a, b, ...c] = arr;
+// ...c here is called the rest operator (rest element).
 // console.log(a, b, c);
 // 👉 It collects the remaining elements of the array into a new array.
 

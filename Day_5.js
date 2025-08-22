@@ -1,6 +1,5 @@
 // 5. Closures & this keyword
 // 📌 Concepts
-
 // Closure: A function that remembers variables from its outer scope, even after outer function finishes.
 // function outer(){
 //     let count=0;

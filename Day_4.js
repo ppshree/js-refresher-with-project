@@ -1,6 +1,5 @@
 //4. Promises & async/await
 // 📌 Concepts
-
 // Promise: Represents an async operation (pending → fulfilled/rejected).
 //const promise=new Promise((resolve,reject)=>{
     // if(false){
@@ -46,7 +45,7 @@
 // fetchData()
 
 // async/await: Cleaner syntax to handle promises.
-const API='https://jsonplaceholder.typicode.com/posts';
+//const API='https://jsonplaceholder.typicode.com/posts';
 // const fetchData= async ()=>{
 //     try{
 // const res=await fetch(API);

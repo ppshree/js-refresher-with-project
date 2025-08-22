@@ -1,10 +1,7 @@
 // 6. Error Handling
 // 📌 Concepts
-
 // try…catch: Used to handle runtime errors.
-
 // finally: Runs always, whether error occurs or not.
-
 // throw: Create custom errors.
 // try{
 //     let num=5/0;

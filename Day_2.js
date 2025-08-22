@@ -1,10 +1,7 @@
 // 2. Functions (arrow functions, default parameters)
 // 📌 Concepts
-
 // Normal function: Has its own this.
-
 // Arrow function: Inherits this from surrounding context.
-
 // Default parameters: Function arguments with default values.
 
 //function declaration==>
@@ -47,7 +44,6 @@
 //add(1);
 
 // 👉 Practice:
-
 // Write an arrow function to calculate factorial.
 //5!=5*4*3*2*1
 // const calFac=(num)=>{

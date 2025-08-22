@@ -38,52 +38,52 @@
 // }
 
 //with local storage
-const taskList = document.getElementById("taskList");
-const addBtn = document.getElementById("addBtn");
-const taskInput = document.getElementById("taskInput");
+// const taskList = document.getElementById("taskList");
+// const addBtn = document.getElementById("addBtn");
+// const taskInput = document.getElementById("taskInput");
 
-let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+// let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
-function saveTasks() {
-  localStorage.setItem("tasks", JSON.stringify(tasks));
-}
+// function saveTasks() {
+//   localStorage.setItem("tasks", JSON.stringify(tasks));
+// }
 
-function renderTasks() {
-  taskList.innerHTML = "";
-  tasks.forEach((task, index) => {
-    const ListEle = document.createElement("li");
-    ListEle.textContent = task.text;
+// function renderTasks() {
+//   taskList.innerHTML = "";
+//   tasks.forEach((task, index) => {
+//     const ListEle = document.createElement("li");
+//     ListEle.textContent = task.text;
 
-    if (task.completed) {
-      ListEle.classList.add("completed");
-    }
-    ListEle.onclick = () => {
-      tasks[index].completed = !tasks[index].completed;
-      saveTasks();
-      renderTasks();
-    };
+//     if (task.completed) {
+//       ListEle.classList.add("completed");
+//     }
+//     ListEle.onclick = () => {
+//       tasks[index].completed = !tasks[index].completed;
+//       saveTasks();
+//       renderTasks();
+//     };
 
-    const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "X";
-    deleteBtn.onclick = (e) => {
-      e.stopPropagation();
-      tasks.splice(index, 1);
-      saveTasks();
-      renderTasks();
-    };
+//     const deleteBtn = document.createElement("button");
+//     deleteBtn.textContent = "X";
+//     deleteBtn.onclick = (e) => {
+//       e.stopPropagation();
+//       tasks.splice(index, 1);
+//       saveTasks();
+//       renderTasks();
+//     };
 
-    ListEle.appendChild(deleteBtn);
-    taskList.appendChild(ListEle);
-  });
-}
+//     ListEle.appendChild(deleteBtn);
+//     taskList.appendChild(ListEle);
+//   });
+// }
 
-addBtn.onclick = () => {
-  const text = taskInput.value;
-  if (text) {
-    tasks.push({ text, copmleted: false });
-    saveTasks();
-    renderTasks();
-    taskInput.value = "";
-  }
-};
-renderTasks();
+// addBtn.onclick = () => {
+//   const text = taskInput.value;
+//   if (text) {
+//     tasks.push({ text, copmleted: false });
+//     saveTasks();
+//     renderTasks();
+//     taskInput.value = "";
+//   }
+// };
+// renderTasks();
