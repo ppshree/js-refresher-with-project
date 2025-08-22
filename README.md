@@ -11,7 +11,9 @@ It’s designed to strengthen your **JavaScript fundamentals** before diving int
 ```bash
 git clone https://github.com/ppshree/js-refresher-with-project.git
 ```
+```bash
 cd js-refresher-with-project
+```
 2. Open in VS Code
 
 📂 Topics Covered
@@ -26,7 +28,7 @@ Scope defines variable visibility.
 
 ✅ Example:
 
-```bash console.log("PANKAJ"); ```
+```bash
 function testScope() {
   if (true) {
     var x = "I am var";   // function-scoped
@@ -38,6 +40,7 @@ function testScope() {
   // console.log(z); ❌ Error
 }
 testScope(); 
+```
 👉 Practice:
 
 Try re-declaring a let variable.
@@ -53,7 +56,7 @@ Default params → assign default values.
 
 ✅ Example:
 
-
+```bash
 function greet(name = "Guest") {
   return `Hello, ${name}`;
 }
@@ -63,6 +66,7 @@ console.log(greet("Pankaj")); // Hello, Pankaj
 const add = (a, b = 0) => a + b;
 console.log(add(5));   // 5
 console.log(add(5,10)); // 15
+```
 👉 Practice:
 
 Write an arrow function to calculate factorial.
@@ -80,7 +84,7 @@ destructuring → extracts values.
 
 ✅ Example:
 
-
+```bash
 const numbers = [1,2,3,4,5];
 
 const doubled = numbers.map(n => n * 2);      // [2,4,6,8,10]
@@ -91,6 +95,7 @@ const user = { name: "Pankaj", role: "SDE" };
 const { name, role } = user;
 
 const [first, second] = numbers;
+```
 👉 Practice:
 
 Find max number using reduce.
@@ -104,7 +109,7 @@ async/await → cleaner promise handling.
 
 ✅ Example:
 
-
+```bash
 function fetchData() {
   return new Promise((resolve) => {
     setTimeout(() => resolve("Data received"), 1000);
@@ -118,6 +123,7 @@ async function getData() {
   console.log(data);
 }
 getData();
+```
 👉 Practice:
 
 Fetch data from API: https://jsonplaceholder.typicode.com/posts
@@ -131,7 +137,7 @@ this → depends on how function is called.
 
 ✅ Example:
 
-
+```bash
 function outer() {
   let count = 0;
   return function inner() {
@@ -142,7 +148,8 @@ function outer() {
 const counter = outer();
 console.log(counter()); // 1
 console.log(counter()); // 2
-
+```
+```bash
 const person = {
   name: "Pankaj",
   greet() {
@@ -150,6 +157,7 @@ const person = {
   }
 };
 person.greet(); // Hello, Pankaj
+```
 👉 Practice:
 
 Build a closure that generates unique IDs.
@@ -165,7 +173,7 @@ throw → custom errors.
 
 ✅ Example:
 
-
+```bash
 try {
   let num = 5 / 0;
   if (!isFinite(num)) throw new Error("Division by zero!");
@@ -174,6 +182,7 @@ try {
 } finally {
   console.log("Always runs.");
 }
+```
 👉 Practice:
 
 Function that checks if input is a number, else throws error.
