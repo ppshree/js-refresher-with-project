@@ -84,3 +84,16 @@
 // console.log(usersName)
 // const usersAge=users.map((user)=>user.age);
 // console.log(usersAge)
+
+// ...c here is called the rest operator (rest element).
+// const arr = [2,4,6,8,7,8,9];
+// const [a, b, ...c] = arr;
+// console.log(a, b, c);
+// 👉 It collects the remaining elements of the array into a new array.
+
+// The spread operator (...) is used when you expand or unpack elements.
+//  (e.g., passing array items as function arguments, or copying/merging arrays).
+//const arr = [1, 2, 3];
+//console.log(...arr); // 1 2 3
+//const newArr = [...arr, 4, 5];
+//console.log(newArr); // [1, 2, 3, 4, 5]
